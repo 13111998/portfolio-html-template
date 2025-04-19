@@ -643,6 +643,259 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 0;
 }
 
+.tools_expert{
+	padding: 20px 0px 0px 0px;
+	.skill_main{
+		.skill_item{
+			margin-bottom: 18px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			h4{
+				text-align: none;
+				font-size: 14px;
+				font-family: $rob;
+				font-weight: 500;
+				color: $dip;
+				margin-bottom: 15px;
+			}
+			.progress_br{
+				border: 1px solid #eeeeee;
+				padding: 5px;
+				border-radius: 10px;
+			}
+			.progress{
+				height: 10px;
+				border-radius: 10px;
+				background: #e8e8e8;
+				.progress-bar{
+					width: 0%;
+					transition: width .6s ease;
+					height: 10px;
+					border-radius: 5px;
+					vertical-align: middle;
+					align-self: center;
+					background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+				}
+			}
+		}
+	}
+}
+
+/* End Welcome Area css
+============================================================================================ */
+
+/* My Tabs Area css
+============================================================================================ */
+.mytabs_area{
+	background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+}
+.tabs_inner{
+	.nav.nav-tabs{
+		display: block;
+		text-align: center;
+		border: none;
+		margin-bottom: 120px;
+		li{
+			display: inline-block;
+			margin-right: 8px;
+			a{
+				margin: 0px;
+				line-height: 50px;
+				border-radius: 5px;
+				padding: 0px 40px;
+				font-size: 13px;
+				font-weight: 500;
+				color: #fff;
+				font-family: $rob;
+				border: 1px solid #9ab5f5;
+				background: rgba(255, 255, 255, .1);
+				&.active{
+					background: #fff;
+					color: $dip;
+				}
+			}
+		}
+	}
+	.tab-content{
+		.tab-pane{
+			.list{
+				max-width: 460px;
+				margin: auto;
+				position: relative;
+				padding-top: 40px;
+				padding-bottom: 60px;
+				&:before{
+					content: "";
+					height: 100%;
+					width: 5px;
+					background: rgba(255, 255, 255, .20);
+					position: absolute;
+					left: 46%;
+					transform: translateX(-50%);
+					top: -5px;
+				}
+				li{
+					margin-bottom: 60px;
+					position: relative;
+					span{
+						height: 15px;
+						width: 15px;
+						border-radius: 50%;
+						display: block;
+						background: rgba(255, 255, 255, .2);
+						position: absolute;
+						left: 46%;
+						top: 30px;
+						transform: translateX(-50%);
+						&:before{
+							content: '';
+							height: 7px;
+							width: 7px;
+							background: #fff;
+							border-radius: 50%;
+							position: absolute;
+							left: 52%;
+							top: 4px;
+							transform: translateX(-50%);
+						}
+					}
+					&:last-child{
+						margin-bottom: 0px;
+					}
+					.media{
+						.d-flex{
+							padding-right: 100px;
+							p{
+								color: rgba(255, 255, 255, .75);
+								margin-bottom: 0px;
+								padding-top: 20px;
+							}
+						}
+						.media-body{
+							h4{
+								color: #fff;
+								font-size: 21px;
+								text-transform: uppercase;
+								margin-bottom: 20px;
+							}
+							p{
+								color: rgba(255, 255, 255, .75);
+								margin-bottom: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Gallery Area css
+============================================================================================ */
+.home_gallery_area{
+	
+}
+.isotope_fillter{
+	margin-bottom: 50px;
+	.gallery_filter{
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-right: 45px;
+			&:last-child{
+				margin-right: 0px;
+			}
+			a{
+				font-size: 12px;
+				font-family: $rob;
+				font-weight: 500;
+				color: $dip;
+				@include transition;
+				text-transform: uppercase;
+			}
+			&:hover, &.active{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+.gallery_f_inner{
+	margin-bottom: -45px;
+}
+.h_gallery_item{
+	display: inline-block;
+	margin-bottom: 45px;
+	.g_img_item{
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+		border-radius: 5px;
+		&:before{
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			top: 0px;
+			background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+			position: absolute;
+			opacity: 0;
+			transition: all 300ms ease;
+		}
+		.light{
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			opacity: 0;
+		}
+	}
+	.g_item_text{
+		text-align: center;
+		h4{
+			color: $dip;
+			font-size: 21px;
+			margin-top: 22px;
+			@include transition;
+		}
+		p{
+			margin-bottom: 0px;
+		}
+	}
+	&:hover{
+		.g_img_item{
+			&:before{
+				opacity: .85;
+			}
+			.light{
+				opacity: 1;
+			}
+		}
+		.g_item_text{
+			h4{
+				&:hover{
+					color: $baseColor;
+				}
+			}	
+		}
+	}
+}
+.more_btn{
+	text-align: center;
+	margin-top: 80px;
+}
+/* End Gallery Area css
+============================================================================================ */
 
 
 /* ============================= */
